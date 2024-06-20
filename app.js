@@ -103,6 +103,10 @@ app.get('/api/jokes', (req, res)=>{
 //     res.send(mainData || 'hello')
 // })
 
+app.get('/', (req, res) => {
+            res.json("Hello Vercel")
+})
+
 app.get('/api/v1/noticeData', (req, res) => {
             dataCollector()
             res.send(noticeData)
